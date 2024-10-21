@@ -19,13 +19,7 @@ const { mongoDBConnection } = require("./configs/mongoDB");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(
-  cors({
-    origin: ["http://localhost:3000", process.env.MAIN_APP_DOMAIN],
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: false }));
