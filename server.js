@@ -21,8 +21,14 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "http://habit-tracker.yuvrajgupta.in",
+      "https://habit-tracker.yuvrajgupta.in",
+    ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+    // preflightContinue: false,
+    // optionsSuccessStatus: 204,
     credentials: true,
   })
 );
