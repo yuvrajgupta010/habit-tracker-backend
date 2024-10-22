@@ -1,4 +1,4 @@
-# Chat Cast Backend
+# Habit Tracker Backend
 
 Track your daily habits, build consistency, and achieve your goals with our Habit Tracker web app. Stay on top of your routines and create lasting changes! 
 
@@ -8,7 +8,7 @@ Track your daily habits, build consistency, and achieve your goals with our Habi
 To get started, clone the repository and install the dependencies:
 
 ```sh
-git clone [https://github.com/yuvrajgupta010/habit-tracker-backend.git](https://github.com/yuvrajgupta010/habit-tracker-backend.git)
+git clone https://github.com/yuvrajgupta010/habit-tracker-backend.git
 cd habit-tracker-backend
 yarn install
 ```
@@ -16,8 +16,7 @@ yarn install
 ## Setup
 Add .env file with own keys:
 ```bash
-SERVER_ENV="PROD"
-MAIN_APP_DOMAIN="habit-tracker.yuvrajgupta.in"
+SERVER_ENV=""
 PORT=3030
 
 # JWT
