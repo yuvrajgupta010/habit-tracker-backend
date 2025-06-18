@@ -4,7 +4,8 @@
   "description": "Habit tracker backend",
   "main": "server.js",
   "scripts": {
-    "start": "pm2 start server.js -i max --name habit-tracker-backend",
+    "start:lite": "pm2 start server.js --name habit-tracker",
+    "start": "pm2 start server.js -i max --name habit-tracker",
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
